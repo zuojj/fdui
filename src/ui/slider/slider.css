@@ -1,0 +1,118 @@
+.sd-slider {
+	position: relative;
+	overflow: hidden;
+}
+
+.sd-slider-item {
+	position: absolute;
+	top: 0;
+	overflow: hidden;
+}
+
+.sd-slider-item a {
+	display: block;
+	color: #fff;
+}
+
+.sd-slider-item img {
+	display: block;
+	width: 100%;
+}
+
+.sd-slider-item a:after {
+    position: absolute;
+    content: '';
+    background: url(./imgs/bg_hd_line.png) 0 0 repeat-x; 
+    height: 147px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.sd-slider-item .text {
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    left: 0;
+    bottom: 0;
+    font-size: 22px;
+    z-index: 2;
+}
+
+.sd-slider-item .text p {
+    padding: 0 110px 0 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-wrap: normal;
+    color: #fff
+}
+
+.sd-slider-item .text p:hover {
+	text-decoration: underline;
+}
+
+/* Dots */
+.sd-slider-dots {
+	position:absolute; 
+	right:21px; 
+	bottom:27px;
+}
+
+.sd-slider-dots-item {
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    float: left;
+    background: url(./imgs/ico_dian.png) 0 0 no-repeat;
+    margin-left: 8px;
+}
+
+.sd-slider-dots-item.current {
+	width: 12px;
+	background-position: -14px 0;
+}
+
+/* Buttons */
+.sd-slider-btn-prev,
+.sd-slider-btn-next {
+    position: absolute;
+    top: 50%;
+
+    width: 48px;
+    height: 48px;
+    margin-top: -24px;
+
+    transition: transform .2s ease;
+    -webkit-transform: scale(.7,.7);
+        -ms-transform: scale(.7,.7);
+            transform: scale(.7,.7);
+}
+
+.sd-slider-btn-prev {
+    left: 10px;
+    background: url(./imgs/btn_tl.png) 16px 10px no-repeat;
+}
+
+.sd-slider-btn-next {
+    right: 10px;
+    background: url(./imgs/btn_tr.png) 16px 10px no-repeat;
+}
+
+.sd-slider-btn-prev:hover,
+.sd-slider-btn-next:hover {
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+
+    background: url(./imgs/btn_th.png) no-repeat;
+}
+
+.sd-slider-btn-prev:hover {
+	background-position: 0 0;
+}
+
+.sd-slider-btn-next:hover {
+	background-position: 0 -48px;
+}
+

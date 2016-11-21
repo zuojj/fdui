@@ -1,0 +1,19 @@
+.index {
+	width: 800px;
+	margin: 15px auto;
+	box-shadow: 0 0 2px 1px #ccc;
+	&-header {
+		text-align: center;
+		line-height: 40px;
+		border-bottom: 1px solid #ccc;
+	}
+
+	&-ulist {
+		li {
+			height: 40px;
+			line-height: 40px;
+			padding-left: 10px;
+			border-bottom: 1px solid #ccc;
+		}
+	}
+}
