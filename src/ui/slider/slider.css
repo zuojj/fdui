@@ -47,7 +47,7 @@
 .sd-slider-item .text p {
     overflow: hidden;
 
-    padding: 0 110px 0 20px;
+    padding: 0 132px 0 20px;
 
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -66,7 +66,7 @@
     right: 0;
     bottom: 0;
 
-    padding: 19px 16px;
+    padding: 20px 16px;
 }
 
 .sd-slider-dots-item {
@@ -81,8 +81,6 @@
 }
 
 .sd-slider-dots-item.current {
-    width: 20px;
-
     background-position: -10px 7px;
 }
 
