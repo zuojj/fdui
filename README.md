@@ -2,7 +2,7 @@
 Desktop UI Components Library
 
 
-## Use
+## How to use ?
 ```
 git clone https://github.com/zuojj/sdui
 
@@ -18,4 +18,8 @@ npm run prod
 
 // server start
 npm run server
+
+// view in browser
+http://localhost:8080
+
 ```
