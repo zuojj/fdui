@@ -11,5 +11,7 @@ require('../../static/css/base.css');
 var Slider = require('../../ui/slider/slider.js');
 
 new Slider({
-	container: '.container'
+	container: '.container',
+	interval: 3000,
+	autoplay: false
 });

@@ -174,11 +174,16 @@
                 }
             });
 
-            opts.autoplay && $slider.on('mouseenter', function() {
-                clearInterval(me.__timeout);
-                delete me.__timeout;
+            $slider.on('mouseenter', function() {
+                $(this).addClass('sd-slider-hover');
+
+                if(opts.autoplay) {
+                    clearInterval(me.__timeout);
+                    delete me.__timeout;
+                }
             }).on('mouseleave', function() {
-                me.setInterval();
+                $(this).removeClass('sd-slider-hover');
+                opts.autoplay && me.setInterval();
             });
 
             return me;
@@ -205,6 +210,7 @@
                 opts = me.options,
                 direction = direction || opts.direction,
                 direc = direction === 'RTL',
+                zIndex = opts.zIndex + 1,
                 width = opts._width;
 
             opts.current = direc ? opts.next : opts.prev;
@@ -212,13 +218,13 @@
             me.updateIndex(direction);
 
             $items.eq(direc ? opts.prev : opts.next).css({
-                left: 0,
-                zIndex: opts.zIndex
+                left: direc ? 0 - width : width,
+                zIndex: zIndex
             });
 
             $items.eq(direc ? opts.next : opts.prev).css({
                 left: direc ? width : 0 - width,
-                zIndex: opts.zIndex + 1
+                zIndex: zIndex
             });
 
             opts.dots && me.selectDots();
@@ -267,21 +273,28 @@
                 },{
                     index: opts.prev,
                     offset: {
-                        RTL: 0 - 2 * width,
+                        RTL: 0 - width,
                         LTR: 0
                     }
                 },{
                     index: opts.next,
                     offset: {
                         RTL: 0,
-                        LTR: 2 * width
+                        LTR: width
                     }
                 }], function(key, item) {
                     $items.eq(item.index).animate({
                         left: item.offset[direction]
                     }, opts.duration);
                 });
-                me.rearrange(direction); 
+
+                if(me.__timeout__) {
+                    window.clearTimeout(me.__timeout__);
+                    delete me.__timeout__;
+                }
+                me.__timeout__ = window.setTimeout(function() {
+                    me.rearrange(direction); 
+                }, opts.duration);
             }
             return me;    
         },
