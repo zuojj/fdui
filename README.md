@@ -1,12 +1,12 @@
-# sdui
+# fdui
 Desktop UI Components Library
 
 
 ## How to use ?
 ```
-git clone https://github.com/zuojj/sdui
+git clone https://github.com/zuojj/fdui
 
-cd sdui
+cd fdui
 
 npm install
 
