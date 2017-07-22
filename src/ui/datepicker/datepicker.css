@@ -1,4 +1,4 @@
-.sd-datepicker {
+.zd-datepicker {
     display: none;
     width: 193px;
     padding: 0 5px 5px;
@@ -12,7 +12,7 @@
             box-shadow: 0 2px 5px #d9d9d9;
 }
 
-.sd-datepicker-header {
+.zd-datepicker-header {
     position: relative;
     border-bottom: 1px solid #f5f5f5;
     margin: 0 3px 5px;
@@ -20,8 +20,8 @@
     text-align: center;
 }
 
-.sd-datepicker-header .btn-prev-month,
-.sd-datepicker-header .btn-next-month {
+.zd-datepicker-header .btn-prev-month,
+.zd-datepicker-header .btn-next-month {
     position: absolute;
     top: 0;
     width: 24px;
@@ -30,40 +30,40 @@
     background-repeat: no-repeat;
 }
 
-.sd-datepicker-header .btn-prev-month {
+.zd-datepicker-header .btn-prev-month {
     left: -5px;
     background-position: 8px -77px;
 }
 
-.sd-datepicker-header .btn-prev-month:hover {
+.zd-datepicker-header .btn-prev-month:hover {
     background-position: 8px 10px;
 }
 
-.sd-datepicker-header .btn-next-month {
+.zd-datepicker-header .btn-next-month {
     right: -5px;
     background-position: 8px -125px;
 }
 
-.sd-datepicker-header .btn-next-month:hover {
+.zd-datepicker-header .btn-next-month:hover {
     background-position: 8px -32px;
 }
 
-.sd-datepicker-body {
+.zd-datepicker-body {
     line-height: 20px;
 }
 
-.sd-datepicker-body th {
+.zd-datepicker-body th {
     font-weight: normal;
     line-height: 24px;
 }
 
-.sd-datepicker-body td {
+.zd-datepicker-body td {
     cursor: pointer;
     color: #afafaf;
     text-align: center;
 }
 
-.sd-datepicker-body td a {
+.zd-datepicker-body td a {
     display: block;
     width: 18px;
     height: 18px;
@@ -76,29 +76,29 @@
     text-decoration: none;
 }
 
-.sd-datepicker-body td.current-month a:hover {
+.zd-datepicker-body td.current-month a:hover {
     border-color: #00a06a;
     color: #fff;
     background-color: #00a06a;
 }
 
-.sd-datepicker-body td.current a {
+.zd-datepicker-body td.current a {
     border-color: #bbb;
     background-color: #f2f2f2;
 }
 
-.sd-datepicker-body td.selected a {
+.zd-datepicker-body td.selected a {
     color: #fff;
     border-color: #00a06a;
     background-color: #00a06a;
 }
 
-.sd-datepicker-body td.disabled,
-.sd-datepicker-body td.disabled a {
+.zd-datepicker-body td.disabled,
+.zd-datepicker-body td.disabled a {
     cursor: not-allowed;
 }
 
-.sd-datepicker-body td.disabled a:hover {
+.zd-datepicker-body td.disabled a:hover {
     color: #666;
     cursor: not-allowed;
     border-color: #fff;

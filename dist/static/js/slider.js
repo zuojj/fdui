@@ -85,8 +85,8 @@ webpackJsonp([2],{
 
 	            if (!$container.length) return;
 
-	            me.$slider = $container.find('.sd-slider');
-	            me.$items = me.$slider.find('.sd-slider-item');
+	            me.$slider = $container.find('.zd-slider');
+	            me.$items = me.$slider.find('.zd-slider-item');
 
 	            me.updateIndex(opts.direction).initLayout();
 	            opts.dots && me.initDots();
@@ -151,9 +151,9 @@ webpackJsonp([2],{
 	                html = [],
 	                $dots;
 
-	            $dots = me.$dots = $('<div class="sd-slider-dots"></div>');
+	            $dots = me.$dots = $('<div class="zd-slider-dots"></div>');
 	            me.$items.each(function () {
-	                html.push('<div class="sd-slider-dots-item"></div>');
+	                html.push('<div class="zd-slider-dots-item"></div>');
 	            });
 
 	            $dots.css({
@@ -175,7 +175,7 @@ webpackJsonp([2],{
 	                z = me.options.zIndex + 2;
 
 	            $.each(['prev', 'next'], function (key, item) {
-	                item = me['$' + item] = $('<a href="javascript:void(0)" class="sd-slider-btn-' + item + '" data-action="' + item + '"></a>').css('z-index', z);
+	                item = me['$' + item] = $('<a href="javascript:void(0)" class="zd-slider-btn-' + item + '" data-action="' + item + '"></a>').css('z-index', z);
 	                me.$slider.append(item);
 	            });
 
@@ -219,7 +219,7 @@ webpackJsonp([2],{
 	         */
 	        selectDots: function selectDots() {
 	            var me = this;
-	            me.$dots.find('.sd-slider-dots-item').eq(me.options.current || 0).addClass('current').siblings().removeClass('current');
+	            me.$dots.find('.zd-slider-dots-item').eq(me.options.current || 0).addClass('current').siblings().removeClass('current');
 	            return me;
 	        },
 

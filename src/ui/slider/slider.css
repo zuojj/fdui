@@ -1,10 +1,10 @@
-.sd-slider {
+.zd-slider {
     position: relative;
 
     overflow: hidden;
 }
 
-.sd-slider-item {
+.zd-slider-item {
     position: absolute;
     top: 0;
     display: block;
@@ -13,13 +13,13 @@
     overflow: hidden;
 }
 
-.sd-slider-item img {
+.zd-slider-item img {
     display: block;
 
     width: 100%;
 }
 
-.sd-slider-item:after {
+.zd-slider-item:after {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -32,7 +32,7 @@
     background: url(./imgs/mask.png) 0 0 repeat-x;
 }
 
-.sd-slider-item .text {
+.zd-slider-item .text {
     font-size: 22px;
     line-height: 60px;
 
@@ -44,7 +44,7 @@
     width: 100%;
 }
 
-.sd-slider-item .text p {
+.zd-slider-item .text p {
     overflow: hidden;
 
     padding: 0 132px 0 20px;
@@ -56,12 +56,12 @@
     color: #fff;
 }
 
-.sd-slider-item .text p:hover {
+.zd-slider-item .text p:hover {
     text-decoration: underline;
 }
 
 /* Dots */
-.sd-slider-dots {
+.zd-slider-dots {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -69,7 +69,7 @@
     padding: 20px 16px;
 }
 
-.sd-slider-dots-item {
+.zd-slider-dots-item {
     display: inline-block;
     float: left;
 
@@ -80,13 +80,13 @@
     background: url(./imgs/icon-dot.png) 7px 7px no-repeat;
 }
 
-.sd-slider-dots-item.current {
+.zd-slider-dots-item.current {
     background-position: -10px 7px;
 }
 
 /* Buttons */
-.sd-slider-btn-prev,
-.sd-slider-btn-next {
+.zd-slider-btn-prev,
+.zd-slider-btn-next {
     position: absolute;
     top: 50%;
 
@@ -100,20 +100,20 @@
             transform: scale(.7);
 }
 
-.sd-slider-btn-prev {
+.zd-slider-btn-prev {
     left: 10px;
 
     background: url(./imgs/btn-arrow-left.png) 16px 10px no-repeat;
 }
 
-.sd-slider-btn-next {
+.zd-slider-btn-next {
     right: 10px;
 
     background: url(./imgs/btn-arrow-right.png) 16px 10px no-repeat;
 }
 
-.sd-slider-hover .sd-slider-btn-prev:hover,
-.sd-slider-hover .sd-slider-btn-next:hover {
+.zd-slider-hover .zd-slider-btn-prev:hover,
+.zd-slider-hover .zd-slider-btn-next:hover {
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
             transform: scale(1);
@@ -121,17 +121,17 @@
     background: url(./imgs/btn-arrow-hover-highlight.png) no-repeat;
 }
 
-.sd-slider-hover .sd-slider-btn-prev,
-.sd-slider-hover .sd-slider-btn-next {
+.zd-slider-hover .zd-slider-btn-prev,
+.zd-slider-hover .zd-slider-btn-next {
     background: url(./imgs/btn-arrow-hover.png) no-repeat;
 }
 
-.sd-slider-hover .sd-slider-btn-prev,
-.sd-slider-hover .sd-slider-btn-prev:hover {
+.zd-slider-hover .zd-slider-btn-prev,
+.zd-slider-hover .zd-slider-btn-prev:hover {
     background-position: 0 0;
 }
 
-.sd-slider-hover .sd-slider-btn-next,
-.sd-slider-hover .sd-slider-btn-next:hover {
+.zd-slider-hover .zd-slider-btn-next,
+.zd-slider-hover .zd-slider-btn-next:hover {
     background-position: 0 -48px;
 }

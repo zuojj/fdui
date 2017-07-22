@@ -1,12 +1,12 @@
-# fdui
+# zdui
 Desktop UI Components Library
 
 
 ## How to use ?
 ```
-git clone https://github.com/zuojj/fdui
+git clone https://github.com/zuojj/zdui
 
-cd fdui
+cd zdui
 
 npm install
 
@@ -23,3 +23,7 @@ npm run server
 http://localhost:8080
 
 ```
+
+## 组件列表
+* slider: 幻灯片组件
+* datepicker: 日历组件

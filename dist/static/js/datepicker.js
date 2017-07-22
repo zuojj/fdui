@@ -125,7 +125,7 @@ webpackJsonp([0],[
 
 	        $el.off('.datepicker').on('click.datepicker', function (e) {
 	            var val = this.value,
-	                $datepicker = $('div.sd-datepicker');
+	                $datepicker = $('div.zd-datepicker');
 
 	            $datepicker.length && $datepicker.hide();
 
@@ -148,7 +148,7 @@ webpackJsonp([0],[
 	         */
 	        _init: function _init() {
 	            var me = this,
-	                $template = $('<div class="sd-datepicker">' + '<div class="sd-datepicker-header">' + '<span class="sd-datepicker-year"></span>年' + '<span class="sd-datepicker-month"></span>月' + '<a href="javascript:void(0)" class="btn-prev-month" data-action="prevMonth"></a>' + '<a href="javascript:void(0)" class="btn-next-month" data-action="nextMonth"></a>' + '</div>' + '<div class="sd-datepicker-body"></div>');
+	                $template = $('<div class="zd-datepicker">' + '<div class="zd-datepicker-header">' + '<span class="zd-datepicker-year"></span>年' + '<span class="zd-datepicker-month"></span>月' + '<a href="javascript:void(0)" class="btn-prev-month" data-action="prevMonth"></a>' + '<a href="javascript:void(0)" class="btn-next-month" data-action="nextMonth"></a>' + '</div>' + '<div class="zd-datepicker-body"></div>');
 
 	            me.$template = $template.appendTo('body');
 	            me.show();
@@ -326,9 +326,9 @@ webpackJsonp([0],[
 
 	            if ($template && $template.length) {
 	                var arr = me.cache.dateArr;
-	                $template.find('.sd-datepicker-year').html(arr[0]);
-	                $template.find('.sd-datepicker-month').html(arr[1]);
-	                $template.find('.sd-datepicker-body').html(html.join('\n'));
+	                $template.find('.zd-datepicker-year').html(arr[0]);
+	                $template.find('.zd-datepicker-month').html(arr[1]);
+	                $template.find('.zd-datepicker-body').html(html.join('\n'));
 	                me.options.onSelect.call(me);
 	            }
 	            return me;

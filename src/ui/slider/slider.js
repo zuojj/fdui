@@ -56,8 +56,8 @@
 
             if(!$container.length) return;
 
-            me.$slider = $container.find('.sd-slider');
-            me.$items = me.$slider.find('.sd-slider-item');
+            me.$slider = $container.find('.zd-slider');
+            me.$items = me.$slider.find('.zd-slider-item');
 
             opts.dots = opts.dots && me.$items.length > 1;
             opts.buttons = opts.buttons && me.$items.length > 1;
@@ -104,9 +104,9 @@
                 html = [],
                 $dots;
 
-            $dots = me.$dots = $('<div class="sd-slider-dots"></div>');
+            $dots = me.$dots = $('<div class="zd-slider-dots"></div>');
             me.$items.each(function() {
-                html.push('<div class="sd-slider-dots-item" data-action="dot"></div>');
+                html.push('<div class="zd-slider-dots-item" data-action="dot"></div>');
             });
 
             $dots.css({
@@ -128,7 +128,7 @@
                 z = me.options.zIndex + 2;
 
             $.each(['prev', 'next'], function(key, item) {
-                item = me['$'+ item] = $('<a href="javascript:void(0)" class="sd-slider-btn-'+ item +'" data-action="'+item+'"></a>').css('z-index', z);
+                item = me['$'+ item] = $('<a href="javascript:void(0)" class="zd-slider-btn-'+ item +'" data-action="'+item+'"></a>').css('z-index', z);
                 me.$slider.append(item);
             });
 
@@ -175,14 +175,14 @@
             });
 
             $slider.on('mouseenter', function() {
-                $(this).addClass('sd-slider-hover');
+                $(this).addClass('zd-slider-hover');
 
                 if(opts.autoplay) {
                     clearInterval(me.__timeout);
                     delete me.__timeout;
                 }
             }).on('mouseleave', function() {
-                $(this).removeClass('sd-slider-hover');
+                $(this).removeClass('zd-slider-hover');
                 opts.autoplay && me.setInterval();
             });
 
@@ -195,7 +195,7 @@
          */
         selectDots: function() {
             var me = this;
-            me.$dots.find('.sd-slider-dots-item').eq(me.options.current || 0).addClass('current').siblings().removeClass('current');
+            me.$dots.find('.zd-slider-dots-item').eq(me.options.current || 0).addClass('current').siblings().removeClass('current');
             return me;
         },
 
